@@ -9,7 +9,7 @@ const Login = (props) => {
         }
     }, [props.history])
     const onClick = () => {
-        window.location.href = 'https://api.codechef.com/oauth/authorize?response_type=code&client_id=8f850f3b818dfed8fb4630d045205544&state=xyz&redirect_uri=http://192.168.43.245:3000/';
+        window.location.href = 'https://api.codechef.com/oauth/authorize?response_type=code&client_id=8f850f3b818dfed8fb4630d045205544&state=xyz&redirect_uri=https://codechef-arena-app-i8vq1kj1d.now.sh/';
         authContext.setRequestLogin();
     }
     return (
