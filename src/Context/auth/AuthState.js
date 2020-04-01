@@ -12,17 +12,8 @@ import {
 } from '../types';
 let CodechefClientId='8f850f3b818dfed8fb4630d045205544';
 let CodechefClientSecret='1509df6e5801ef7bce12a66e071b1340';
-let redirect_uri='http://192.168.43.245:3000/';        // set redirect url important
-// if(process.env.NODE_ENV!=='production'){
-// 	CodechefClientId=process.env.REACT_APP_CLIENT_ID;
-//     CodechefClientSecret=process.env.REACT_APP_CLIENT_SECRET;
-//     redirect_uri=process.env.REACT_APP_REDIRECT_URI;
-// }
-// else{
-// 	CodechefClientId=process.env.CLIENT_ID;
-//     CodechefClientSecret=process.env.CLIENT_SECRET;
-//     redirect_uri=process.env.REDIRECT_URI
-// }
+let redirect_uri='https://codechef-arena-app-i8vq1kj1d.now.sh/';        // set redirect url important
+
 const AuthState = (props) => {
     const initialState = {
         accessToken:localStorage.getItem('accessToken'),
