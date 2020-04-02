@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Components/layout/navbar.js';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {HashRouter as Router,Route,Switch} from 'react-router-dom';
 import About from './Components/pages/about.js';
 import Home from './Components/pages/home.js';
 import Login from './Components/pages/login.js';
@@ -23,7 +23,7 @@ function App() {
     <AuthState>
     <AlertState>
     <CodechefState>
-    <Router>
+    <Router basename="/">
     <div className="App">
       <Navbar/>
       <Switch>
